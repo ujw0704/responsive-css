@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aquamarine;
+
+}
+ 
+.logo{
+    font-size: 2em;
+    font-weight: 2em;
+}
+.logo span{
+    color:#f7941d ;
+
+}
+nav{
+    width: 100%;
+    height: 8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+
+
+
+}
+
+.menu a:first-child{
+    color:#f7941d
+}
+
+.menu a :hover{
+    color:#f7941d
+
+}
+
+.search{
+    position: relative;
+    width: 100%;
+}
+
+.search input{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    outline: none;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    flex-basis: 30%;
+    margin-left: 40px;
+    
+}
+
+.right{
+    flex-basis:10% ;
+    margin-right: 60px;
+    width: 100%;
+}
+
+img{
+    margin-right: 60px;
+    height: 200px;
+    ;
+}
+.left h2{
+    line-height: 1.25em;
+    padding: 10px;
+}
+.left h2  span{
+    color: rgb(0, 255, 115);
+}
+.left a{
+    text-decoration: none;
+    color: #f7941d;
+    background-color: aliceblue;
+    padding: 1px 5px;
+   
+    
+    border-radius: 8px;
+ 
+ 
+    
+}
+
+.icons{
+    margin-top: 3em;
+    font-size: 2em;
+    cursor: pointer;
+    transform: 0.4s;
+}
+.icons i:hover{
+    background-color: blueviolet;
+    color: bisque;
+    border-radius: 50%;
+
+}
+
+icons i:last-child{
+    background-color: blueviolet;
+    color: bisque;
+    border-radius: 50%;
+
+}
+@media only screen and (max-width:550){
+    .logo{
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .search{display: none;}
+    #mode{display: none;}
+    nav{
+        padding: 0,20px;
+    }
+
+    .menu{
+        width: 100px;text-align: center;
+    }
+    .container{
+        text-align: center;
+        padding: 20px 40px;
+        flex-direction: column-reverse;
+    }
+    
+}
